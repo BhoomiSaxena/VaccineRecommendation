@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #2d4b73;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+    border-color: #2d4b73;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #2d4b73;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b5e8c;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1em;
+    color: green;
+}
+
+.history {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Adjust logout button to be longer */
+.logout-button {
+    padding: 5px 5px;  /* Adjusted padding for more length */
+    font-size: 0.9em;    /* Slightly smaller font size */
+    background-color: #c41d1d; /* Matching color */
+    color: white;
+    border: none;
+    border-radius: 6px;  /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;     /* Space below history */
+    width: 20%;          /* Full width of container */
+    display: block;       /* Make it a block-level element */
+}
+
+.logout-button:hover {
+    background-color: #ff0000; /* Darker shade on hover */
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+}
